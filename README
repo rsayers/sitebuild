@@ -1,0 +1,12 @@
+There are dozens of static site generators, all of them try to do too much for my taste.
+
+the first two lines are all you need to change, define the name of a template file
+and the name of your content files.  The content files will need a leading
+underscore, and once compiled this will be removed, so if you want the resulting
+file to be foo.html, your content file needs to be _foo.html
+
+Running build.rb will check the current dir and all subdirs for content files
+and will build a live file with the template for each one it finds.
+
+The template file will need to contain: {content} where the content
+should go.
